@@ -192,15 +192,6 @@ namespace Ignorante.Engines
             sb.AppendLine("(Escrito em setembro de 2020)");
             sb.AppendLine();
             sb.AppendLine();
-            sb.AppendLine("** Sobre o dev, Igor Christofer Eisenhut:");
-            sb.AppendLine();
-            sb.AppendLine("\tOlá, espero que este app esteja lhe ajudando! Tenho 20 anos e estou desde 2018 atuando profissionalmente");
-            sb.AppendLine("\tno setor de desenvolvimento de sistemas. Tenho enorme paixão por essa área, onde me especializo na");
-            sb.AppendLine("\tlinguagem de programação C#. Busco sempre me manter atualizado com as tendências do mercado e adoro fazer");
-            sb.AppendLine("\tcursos, tanto presencialmente quanto em plataformas online (aliás, atualmente estou no quarto semestre");
-            sb.AppendLine("\tdo curso de Bacharelado em Ciência da Computação). Gosto muito de ler sobre ciência (principalmente física");
-            sb.AppendLine("\te astronomia), finanças e boas práticas de tprogramação");
-            sb.AppendLine();
             sb.AppendLine("** O Ignorante");
             sb.AppendLine();
             sb.AppendLine("\tDesenvolvi o Ignorante porque meus repositórios do Git sempre continham os arquivos temporários que eram");
@@ -216,7 +207,7 @@ namespace Ignorante.Engines
             sb.AppendLine("\tdo template para a linguagem que estávamos utilizando, colou no Visual Studio Code, salvou o arquivo como");
             sb.AppendLine("\t\".gitignore\" e colou na pasta do projeto. Notei duas coisas: 1 - durante todo esse tempo em que meus");
             sb.AppendLine("\trepositórios ficaram poluídos existia uma solução ridiculamente simples para o problema; e 2 - toda vez que");
-            sb.AppendLine("\teu quisesse criar um arquivo .gitignore, teria que repetir passo a passo todas as etapas que o Éliton executou");
+            sb.AppendLine("\teu quisesse criar um arquivo .gitignore, teria que repetir passo a passo todas as etapas que o Éliton executou,");
             sb.AppendLine("\tum processo bem chato pra falar a verdade.");
             sb.AppendLine();
             sb.AppendLine("\tComo atualmente estou estudando sobre APIs e elas geralmente seguem um padrão de rota \"{endereço do site}/api\",");
@@ -225,12 +216,24 @@ namespace Ignorante.Engines
             sb.AppendLine("\tnotado sexta-feira: com a API, eu poderia criar um serviço que consome as informações do site e faz");
             sb.AppendLine("\ttodo o processo trabalhoso para mim.");
             sb.AppendLine();
-            sb.AppendLine("\tAssim nasceu o Ignorante, um aplicativo para facilitar a vida de desenvolvedores que, assim como eu, não");
-            sb.AppendLine("\tgostam de processos manuais mas precisam manter seus projetos organizados e sem lixo. Caso tenha alguma");
-            sb.AppendLine("\tsugestão de melhoria ou encontrem algum bug, por favor me contatem para que eu possa realizar os ajustes!");
+            sb.AppendLine("\tAssim nasceu o Ignorante, um aplicativo para facilitar a vida de devs que, assim como eu, não gostam de");
+            sb.AppendLine("\tprocessos manuais mas precisam manter seus projetos organizados e sem resíduos. Caso tenha alguma sugestão ");
+            sb.AppendLine("\tde melhoria ouencontre algum bug, por favor me contate para que eu possa realizar os ajustes!");
+            sb.AppendLine();
+            sb.AppendLine();
+            sb.AppendLine("** Sobre o desenvolvedor, Igor Christofer Eisenhut:");
+            sb.AppendLine();
+            sb.AppendLine("\tOlá, espero que este app esteja lhe ajudando! Tenho 20 anos e estou desde 2018 atuando profissionalmente");
+            sb.AppendLine("\tno setor de desenvolvimento de sistemas. Tenho enorme paixão por essa área, onde me especializo na");
+            sb.AppendLine("\tlinguagem de programação C#. Busco sempre me manter atualizado com as tendências do mercado e adoro fazer");
+            sb.AppendLine("\tcursos, tanto presencialmente quanto em plataformas online (aliás, atualmente estou no quarto semestre");
+            sb.AppendLine("\tdo curso de Bacharelado em Ciência da Computação). Gosto muito de ler sobre ciência (principalmente física");
+            sb.AppendLine("\te astronomia), finanças e boas práticas de programação");
             sb.AppendLine();
             sb.AppendLine($"\tLinkedIn: {MEU_LINKEDIN}");
             sb.AppendLine($"\tGithub: {MEU_GIT}");
+            sb.AppendLine();
+            sb.AppendLine();
 
             return sb.ToString();
         }
@@ -252,6 +255,11 @@ namespace Ignorante.Engines
             if (tokens.Length == 1)
             {
                 return funcoesSemParametro[tokens[0]]();
+            }
+
+            if (tokens[1] == CMD_LIST)
+            {
+                throw new ArgumentException($"** Comando inválido! \"{CMD_LIST}\" não pode ser utilizado como parâmetro.\n");
             }
 
             return funcoesComUmParametro[tokens[0]](tokens[1]);

@@ -12,7 +12,7 @@ namespace Ignorante
         {
             IIgnoranteEngine ignoranteEngine = new IgnoranteEngine();
 
-            Console.WriteLine("IGNORANTE v1.0");
+            Console.WriteLine("Ignorante, powered by gitignore.io");
             Console.WriteLine();
             Console.WriteLine(ignoranteEngine.ResolverComando("help"));
 
@@ -35,7 +35,7 @@ namespace Ignorante
                 if (continuar)
                 {
                     Console.Clear();
-                    Console.WriteLine("IGNORANTE v1.0");
+                    Console.WriteLine("Ignorante, powered by gitignore.io");
                     Console.WriteLine();
                     Console.WriteLine(resultado);
                 }
