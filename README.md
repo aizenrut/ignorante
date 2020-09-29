@@ -1,6 +1,6 @@
 # Ignorante
 
-Um aplicativo para facilitar a vida de devs que, assim como eu, não gostam de processos manuais mas precisam manter seus projetos organizados e sem resíduos. Com ele, é possível gerar arquivos .gitignore em questão de um comando, sem exigir que o desenvolvedor tenha conhecimentos sobre como montar um arquivo desse tipo nem aonde encontrar um template pronto para a linguagem que ele está utilizando.
+Um aplicativo console para facilitar a vida de devs que, assim como eu, não gostam de processos manuais mas precisam manter seus projetos organizados e sem resíduos. Com ele, é possível gerar arquivos .gitignore em questão de um comando, sem exigir que o desenvolvedor tenha conhecimentos sobre como montar um arquivo desse tipo nem aonde encontrar um template pronto para a linguagem que ele está utilizando.
 
 Os comandos para ele são os seguintes:
 
