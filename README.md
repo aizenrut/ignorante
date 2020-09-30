@@ -12,6 +12,15 @@ Os comandos para ele são os seguintes:
 Através destes comandos o app consome a API do site gitignore.io e gera o .gitignore sem maiores interferências manuais, bastando ao utilizador colocar o executável na pasta em que deseja gerar o arquivo.
 
 
+## Downloads
+
+Windows (x64): https://github.com/Aizenrut/Files/raw/master/Ignorante/win-x64/ignorante-win-x64.7z
+
+Linux (x64): https://github.com/Aizenrut/Files/raw/master/Ignorante/linux-x64/ignorante-linux-x64.7z
+
+macOS (x64): https://github.com/Aizenrut/Files/raw/master/Ignorante/osx-x64/ignorante-osx-x64.7z
+
+
 ## História
 
 Desenvolvi o Ignorante porque meus repositórios do Git sempre continham os arquivos temporários que eram gerados pelo Visual Studio, as DLLs compiladas dos meus programas, os pacotes de dependência do Node.js, e por aí vai. Não tinha percebido isso até que (semestre pssado) tive que entregar um trabalho com cerca de estonteantes 100MB ao meu professor de web apenas por causa dos pacotes de dependências que o Node havia baixado. Quando ele pediu para adicionar um .gitignore para que o projeto não ficasse imenso eu não soube como fazer.
